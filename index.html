@@ -1,9 +1,46 @@
 <html>
     <head>
-        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet"
+        />
+        <title>Movie Watchlist</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     </head>
     <body>
-        <h1>index.html</h1>
+        <div class="container">
+            <header class="site-header">
+                <h1>Find your film</h1>
+                <p id="watchlist-btn" class="watchlist-btn">My Watchlist</p>
+            </header>
+            <section id="search-section" class="search-section">
+                <input type="text" class="search-input" id="search-input" placeholder="Search for a movie..." />
+                <input type="number" class="input-year" id="input-year" placeholder="Year (opt)" />
+                <select class="input-type" id="input-type">
+                    <option value="">All Types</option>
+                    <option value="movie">Movie</option>
+                    <option value="series">Series</option>
+                    <option value="episode">Episode</option>
+                </select>
+                <button class="search-button" id="search-button">Search</button>
+            </section>
+            <section id="results-section" class="results-section">
+                <div id="results-container" class="results-container">
+                    <!-- when empty-->
+                     <div class="empty-state">
+                        <i class="fa-solid fa-film"></i>
+                        <p>Search for a movie to add it to your watchlist.</p>
+                    </div>
+                    <!-- Movie cards will be dynamically inserted here -->
+                </div>
+            </section>
+            <footer>
+                <p>Made with ❤️ by bimbim-Lab</p>
+            </footer>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>

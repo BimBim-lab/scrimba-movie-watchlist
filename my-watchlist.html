@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet"
+        />
+        <title>My Watchlist</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    </head>
+    <body>
+        <div class="container dark">
+            <header class="site-header">
+                <h1>My Watchlist</h1>
+                <p id="search-for-movie-btn" class="search-for-movie-btn">search for movie</p>
+            </header>
+            <section id="results-section" class="results-section black-bg">
+                <div id="results-container-my-watchlist" class="results-container black-bg">
+                    <!-- when empty-->
+                     <div class="empty-state black-bg">
+                        <i class="fa-solid fa-film"></i>
+                        <p>Search for a movie to add it to your watchlist.</p>
+                    </div>
+                    <!-- Movie cards will be dynamically inserted here -->
+                </div>
+            </section>
+            <footer class="black-bg">
+                <p>Made with ❤️ by bimbim-Lab</p>
+            </footer>
+        </div>
+        <script src="my-watchlist.js"></script>
+    </body>
+</html>
