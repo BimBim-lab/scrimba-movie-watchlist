@@ -44,6 +44,7 @@ function addToMyWatchlist(e) {
         if(!myWatchlist.some(movie => movie.imdbID === movieId)) {
             myWatchlist.push(movieToAdd);
             localStorage.setItem("myWatchlist", JSON.stringify(myWatchlist));
+            alert("Movie added to watchlist");
 
         }
         else {
