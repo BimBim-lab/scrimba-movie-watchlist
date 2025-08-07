@@ -78,7 +78,7 @@ h3 {
 }
 .site-header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: var(--gutter);
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./images/header-images.jpg");
@@ -319,5 +319,10 @@ footer {
 
 
 /* 10) Responsive tweaks */
-
-
+@media(min-width: 600px){
+    .site-header{
+        justify-content: unset;
+        gap: 100px;
+        justify-content: center;
+}
+}
